@@ -2115,7 +2115,7 @@
 		4F1C70711027B53100B46459 /* Copy Static Library Headers */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = Headers;
+			dstPath = include/GData;
 			dstSubfolderSpec = 16;
 			files = (
 				4F6956FE14D1EC45006EC12E /* GDataEntrySiteDoc.h in Copy Static Library Headers */,
@@ -4527,6 +4527,7 @@
 				4F1C70711027B53100B46459 /* Copy Static Library Headers */,
 				4F1C6E0C1027B3CE00B46459 /* Sources */,
 				4F1C6E0D1027B3CE00B46459 /* Frameworks */,
+				BB5F51EB14E41B3000C991B0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -4698,6 +4699,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		BB5F51EB14E41B3000C991B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh Scripts/CopyHeadersToLegacyBuildDir.command";
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -6342,6 +6356,7 @@
 					"-DGDATA_IPHONE=1",
 				);
 				PRODUCT_NAME = GDataTouchStaticLib;
+				PUBLIC_HEADERS_FOLDER_PATH = include/GData;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -6364,6 +6379,7 @@
 					"-DGDATA_INCLUDE_nameServiceHere_SERVICE=1",
 				);
 				PRODUCT_NAME = GDataTouchStaticLib;
+				PUBLIC_HEADERS_FOLDER_PATH = include/GData;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
