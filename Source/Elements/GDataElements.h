@@ -22,11 +22,11 @@
 #import "GDataFramework.h"
 
 // utility classes
-#import "GTMHTTPFetcher.h"
-#import "GTMHTTPFetcherLogging.h"
-#import "GTMHTTPUploadFetcher.h"
-#import "GTMGatherInputStream.h"
-#import "GTMMIMEDocument.h"
+#import <GTMHTTPFetcher/GTMHTTPFetcher.h>
+#import <GTMHTTPFetcher/GTMHTTPFetcherLogging.h>
+#import <GTMHTTPFetcher/GTMHTTPUploadFetcher.h>
+#import <GTMHTTPFetcher/GTMGatherInputStream.h>
+#import <GTMHTTPFetcher/GTMMIMEDocument.h>
 
 #import "GDataDateTime.h"
 #import "GDataServerError.h"

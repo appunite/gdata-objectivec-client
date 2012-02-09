@@ -17,7 +17,7 @@
 //  GDataServiceBase.h
 //
 
-#import "GTMHTTPFetcherService.h"
+#import <GTMHTTPFetcher/GTMHTTPFetcherService.h>
 
 #import "GDataEntryBase.h"
 #import "GDataFeedBase.h"

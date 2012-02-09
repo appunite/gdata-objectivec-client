@@ -17,7 +17,7 @@
 //  GDataAuthenticationFetcher.h
 //
 
-#import "GTMHTTPFetcher.h"
+#import <GTMHTTPFetcher/GTMHTTPFetcher.h>
 
 @interface GDataAuthenticationFetcher : NSObject
 

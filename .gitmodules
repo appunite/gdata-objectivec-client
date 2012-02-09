@@ -1,0 +1,3 @@
+[submodule "Source/Frameworks/GTMOAuth2"]
+	path = Source/Frameworks/GTMOAuth2
+	url = git@github.com:appunite/gtm-oauth2.git
