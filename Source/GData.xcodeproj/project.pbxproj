@@ -2070,6 +2070,7 @@
 		4FFF31500D6BA22300CD9B59 /* GDataEntrySpreadsheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FFF314F0D6BA22300CD9B59 /* GDataEntrySpreadsheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FFF31630D6BA2AB00CD9B59 /* GDataSpreadsheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FFF31620D6BA2AB00CD9B59 /* GDataSpreadsheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB5F519714E40CEF00C991B0 /* GTMHTTPFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5F519614E40CEF00C991B0 /* GTMHTTPFetcher.framework */; };
+		BB5F51DD14E40FEE00C991B0 /* libOAuthTouch2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0AAAF114E3FF9300E26EAA /* libOAuthTouch2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2100,6 +2101,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4F724A7012248B19001A4AD0;
 			remoteInfo = GTMOAuth2.framework;
+		};
+		BB5F51DB14E40FDF00C991B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB0AAAE514E3FF9200E26EAA /* GTMOAuth2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = OAuthTouchStaticLib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -3106,6 +3114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5F51DD14E40FEE00C991B0 /* libOAuthTouch2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4522,6 +4531,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BB5F51DC14E40FDF00C991B0 /* PBXTargetDependency */,
 			);
 			name = GDataTouchStaticLib;
 			productName = GDataTouchStaticLib;
@@ -6170,6 +6180,11 @@
 			name = GTMOAuth2.framework;
 			targetProxy = BB0AAAF414E3FFA400E26EAA /* PBXContainerItemProxy */;
 		};
+		BB5F51DC14E40FDF00C991B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthTouchStaticLib;
+			targetProxy = BB5F51DB14E40FDF00C991B0 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -6316,6 +6331,11 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_ENABLE_OBJC_GC = unsupported;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SOURCE_ROOT)/Frameworks/GTMOAuth2/Source/Frameworks/GTMHTTPFetcher/Source/Build\"",
+					"\"$(SOURCE_ROOT)/Frameworks/GTMOAuth2/Source/Build\"",
+					/usr/include/libxml2,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -6331,6 +6351,11 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				GCC_ENABLE_OBJC_GC = unsupported;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SOURCE_ROOT)/Frameworks/GTMOAuth2/Source/Frameworks/GTMHTTPFetcher/Source/Build\"",
+					"\"$(SOURCE_ROOT)/Frameworks/GTMOAuth2/Source/Build\"",
+					/usr/include/libxml2,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = (
 					"$(inherited)",
