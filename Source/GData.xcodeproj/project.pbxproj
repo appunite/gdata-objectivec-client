@@ -6358,6 +6358,7 @@
 				PRODUCT_NAME = GDataTouchStaticLib;
 				PUBLIC_HEADERS_FOLDER_PATH = include/GData;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -6381,6 +6382,7 @@
 				PRODUCT_NAME = GDataTouchStaticLib;
 				PUBLIC_HEADERS_FOLDER_PATH = include/GData;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
