@@ -6376,7 +6376,7 @@
 					"$(inherited)",
 					"-DGDATA_IPHONE=1",
 					"-DGDATA_REQUIRE_SERVICE_INCLUDES=1",
-					"-DGDATA_INCLUDE_nameServiceHere_SERVICE=1",
+					"-DGDATA_INCLUDE_CONTACTS_SERVICE=1",
 				);
 				PRODUCT_NAME = GDataTouchStaticLib;
 				PUBLIC_HEADERS_FOLDER_PATH = include/GData;
